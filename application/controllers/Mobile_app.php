@@ -18,7 +18,7 @@ class Mobile_app extends CI_Controller
 	public function index()
 	{		
 
-			$header['page_name'] = 'ลูกบ้านอาคารชุดPack1';
+			$header['page_name'] = 'ลูกบ้านอาคารชุดเอื้ออาทรบางบ่อ';
 			$header['page_focus'] = 'home';
 			 
 
@@ -193,7 +193,7 @@ class Mobile_app extends CI_Controller
 
 	        $UserMessage = $Member[0]->CustomerName." ทำการส่งภาพ";
 
-	        send_notify_message(" [ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]","https://pack1.sakorncable.com/upload/temp/".$file.".jpg");
+	        send_notify_message(" [ ".$UserMessage." รหัส ".$_POST["CustomerID"]." ]","https://boo3.sakorncable.com/upload/temp/".$file.".jpg");
 
 	       	 
 	        echo "1";

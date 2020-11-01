@@ -110,7 +110,7 @@ class Devices extends CI_Controller
 
 			$file = $_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
 			move_uploaded_file($_FILES["C:\\Users\\Computer\\Desktop\\testcam\\output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
-			$ImgUrl = "https://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
+			$ImgUrl = "https://boo3.sakorncable.com/upload/tempimg/".$file.".jpg";
 			$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
 			
 			echo "CaptureImage @ URL : ".$ImgUrl; 
@@ -123,7 +123,7 @@ class Devices extends CI_Controller
 
 			$file = $_FILES["/home/pi/Desktop/capture/output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
 			move_uploaded_file($_FILES["/home/pi/Desktop/capture/output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
-			$ImgUrl = "https://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
+			$ImgUrl = "https://boo3.sakorncable.com/upload/tempimg/".$file.".jpg";
 			$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
 
 			echo "CaptureImage @ URL : ".$ImgUrl; 
@@ -137,7 +137,7 @@ class Devices extends CI_Controller
 			
 			$file = $_FILES["/Users/jeerawat/Desktop/testffmpeg/output_jpg"]["name"]."-".$_POST["Date"]."-".$_POST["Time"];
 			move_uploaded_file($_FILES["/Users/jeerawat/Desktop/testffmpeg/output_jpg"]["tmp_name"], "/home/admin/web/pack1.sakorncable.com/public_html/upload/tempimg/".$file.".jpg");
-			$ImgUrl = "https://pack1.sakorncable.com/upload/tempimg/".$file.".jpg";
+			$ImgUrl = "https://boo3.sakorncable.com/upload/tempimg/".$file.".jpg";
 			$this->Devices_model->insertDataTemp($ImgUrl,$_POST["Temp"],date("Y-m-d"),date("H:i:s"));
 
 			echo "CaptureImage @ URL : ".$ImgUrl; 
