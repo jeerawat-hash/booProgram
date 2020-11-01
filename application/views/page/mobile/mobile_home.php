@@ -831,6 +831,7 @@
                                         </div>
                                     </div>
                             </div>  -->
+                            
                             <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                         </div>
@@ -1199,7 +1200,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="defaultModalLabel">ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรPack1 <font color="red">(หมายเลขตึก-หมายเลขห้อง)</font></h4>
+                            <h4 class="modal-title" id="defaultModalLabel">ยืนยันตัวตนด้วยหมายเลขห้องบ้านเอื้ออาทรบางบ่อ 3 <font color="red">(หมายเลขตึก-หมายเลขห้อง)</font></h4>
                         </div>
                         <div class="modal-body">
 
