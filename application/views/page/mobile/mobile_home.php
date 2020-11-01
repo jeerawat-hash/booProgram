@@ -990,7 +990,7 @@
                                      responsive-wrapper-wxh-572x612"
                                      style="-webkit-overflow-scrolling: touch; overflow: auto;">
 
-                                    <iframe  src="https://pack1.sakorncable.com/upload/pack1file/File1.pdf"> 
+                                    <iframe  src="https://boo3.sakorncable.com/upload/pack1file/File1.pdf"> 
                                       <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
                                 An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
                                     </iframe>
@@ -999,7 +999,7 @@
                                 </div> -->
                                 <div class="form-group">
 
-                                    <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
+                                    <a class="btn btn-lg btn-info waves-effect" href="https://boo3.sakorncable.com/upload/pack1file/File1.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
 
                                 </div>
 
@@ -1044,7 +1044,7 @@
                                      responsive-wrapper-wxh-572x612"
                                      style="-webkit-overflow-scrolling: touch; overflow: auto;">
 
-                                    <iframe  src="https://pack1.sakorncable.com/upload/pack1file/File2.pdf"> 
+                                    <iframe  src="https://boo3.sakorncable.com/upload/pack1file/File2.pdf"> 
                                       <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
                                 An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
                                     </iframe>
@@ -1053,7 +1053,7 @@
                                 </div> -->
                                 <div class="form-group">
 
-                                    <a class="btn btn-lg btn-info waves-effect" href="https://pack1.sakorncable.com/upload/pack1file/File2.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
+                                    <a class="btn btn-lg btn-info waves-effect" href="https://boo3.sakorncable.com/upload/pack1file/File2.pdf">ดาว์โหลด/เปิดเต็มจอ</a>
 
                                 </div>
 
@@ -1235,14 +1235,14 @@
 
 
         
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/mobile_home.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js"></script>
-        <script src="https://pack1.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/mobile_home.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_CCTV.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerCheckblanace.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerSendSlip.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_CustomerGetDataCarModal.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSwitch.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_SmartSecurity.js"></script>
+        <script src="https://boo3.sakorncable.com/assets/pages/mobile/js/Mobile_SmartWM.js"></script>
 
 
 
@@ -1298,7 +1298,7 @@ function CopyFunction() {
             if (idleTime > timeOut) {
                 $("#PreviewTVplayer").html("");
                 //alert("หมดเวลาการเชื่อมต่อกำลังรีโหลดโปรแกรม....");
-                top.location.href = 'https://pack1.sakorncable.com/';
+                top.location.href = 'https://boo3.sakorncable.com/';
             }
         }
         
