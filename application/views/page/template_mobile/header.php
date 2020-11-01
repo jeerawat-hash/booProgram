@@ -118,7 +118,7 @@
                 -->
                 <a href="javascript:void(0);" class="bars"></a>
                 
-                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล </a>
+                <a class="navbar-brand" href="javascript:void(0);">บ้านเอื้ออาทรบางบ่อ 3 สาครเคเบิล</a>
             </div>
             
             <!--
