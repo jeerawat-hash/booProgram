@@ -140,7 +140,7 @@
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
-                            <div class="text">ข้อบังคับ  นิติเคหะชมชนเทพารักษ์ 3 Pack 1</div>
+                            <div class="text">ข้อบังคับ บ้านเอื้ออาทรบางบ่อ 3 </div>
                         </div>
                     </div>
 
@@ -152,7 +152,7 @@
                             <i class="material-icons">equalizer</i>
                         </div>
                         <div class="content">
-                            <div class="text">ระเบียบ นิติเคหะชมชนเทพารักษ์ 3 Pack 1</div>
+                            <div class="text">ระเบียบ บ้านเอื้ออาทรบางบ่อ 3 </div>
                         </div>
                     </div>
 
@@ -188,263 +188,14 @@
         </div>
 
 
-
-        <div class="block-header">
-                <h2>กล้องวงจรปิด</h2>
-            </div>
-
-
-
-            
-            <div class="row clearfix">
-              <!-- Menu -->    
- 
-                <div id="CCTV1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร45</div>
-                        </div>
-                    </div>
-
-                </div> 
-                <!--
-                <div id="CCTV2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร37</div>
-                        </div>
-                    </div>
-
-                </div>  
-                -->
-
-                <div id="CCTV3" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร38</div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--
-                <div id="CCTV4" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร39</div>
-                        </div>
-                    </div>
-
-                </div> 
-                -->
-                <div id="CCTV5" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร65</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="CCTV6" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร66</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-
-                <div id="CCTV7" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร43</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <div id="CCTV8" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง อาคาร44</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <div id="CCTV9" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง ลานจอดรถ2-1</div>
-                        </div>
-                    </div>
-
-                </div> 
-                <div id="CCTV10" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">กล้อง ลานจอดรถ2-2</div>
-                        </div>
-                    </div>
-
-                </div>  
- 
-            <!-- Menu -->
-            </div>
-
-
-
-
-            <div class="block-header">
-                <h2>สวัสดิการนิติบุคคล</h2>
-            </div>
-
- 
-            <div class="row clearfix">
-              <!-- Menu -->    
- 
-                <div id="SmartWM" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-black">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">บริการเครื่องซักผ้าฟรี</div>
-                        </div>
-                    </div>
-
-                </div> 
-
-                <!--
-                <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">devices</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">ตู้กดน้ำ (อยู่ระหว่างดำเนินการ)</div>
-                        </div>
-                    </div>
-
-                </div> 
-                -->
-
-                <div id="Water" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-green">
-                            <i class="material-icons">equalizer</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">บริการล้างแอร์ราคาประหยัด (อยู่ระหว่างดำเนินการ)</div>
-                        </div>
-                    </div>
-
-                </div> 
+  
 
 
  
- 
-            <!-- Menu -->
-        </div>
-
-
-
-         <div class="block-header">
-                <h2>รักษาความปลอดภัย</h2>
-            </div>
-
- 
-            <div class="row clearfix">
-              <!-- Menu -->    
- 
-                <div id="Security" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-red">
-                            <i class="material-icons">access_alarm</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">แจ้งเหตุ รปภ.</div>
-                        </div>
-                    </div>
-
-                </div> 
- 
-
-
- 
- 
-            <!-- Menu -->
-        </div>
 
 
 
 
-        <div class="block-header">
-                <h2>อุปกรณ์ที่พักอาศัย</h2>
-            </div>
-
- 
-            <div class="row clearfix">
-              <!-- Menu -->    
- 
-                <div id="SmartSwitch1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-blue">
-                            <i class="material-icons">equalizer</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">อุปกรณ์ให้แสงสว่างภายในอาคาร</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div id="IOT2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box hover-zoom-effect">
-                        <div class="icon bg-green">
-                            <i class="material-icons">equalizer</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">ระบบSmartRoomภายในห้องโดยสาครเคเบิล (อยู่ระหว่างดำเนินการ)</div>
-                        </div>
-                    </div>
-
-                </div> 
- 
- 
-            <!-- Menu -->
-        </div>
 
 
 
@@ -455,241 +206,7 @@
 
 
 
-
-
-    <!-- SmartWM -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartWMModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">สวัสดิการเครื่องซักผ้าฟรีสำหรับลูกบ้านPack1</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                        <div class="row clearfix">
-                                <center>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                          
-                                        <img id="previewImgWM" style="width: 60%;height: auto;" src="https://ctt.trains.com/sitefiles/images/no-preview-available.png">
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    
-                                    <div class="form-group form-float">
-                                  
-                                        <input type="file" style="display: none;" accept="image/*" id = "WMQRCodeFile" name="WMQRCodeFile" onchange="previewFile(this);" required>
-
-                                        <button id="SelectImageWM" style="text-align: center;" class="btn btn-primary waves-effect" ><h4>ถ่ายภาพ QRCode หน้าเครื่องซักผ้า</h4></button> 
-                                    </div>
-
-
-                                </div>
-                                </center>
-                        </div> 
-
- 
-
-                        </div>
-                        <div class="modal-footer">
-                            
-                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ตรวจสอบสิทธิการใข้งาน</button>
-                            <div class="preloader" id="PreloadSendData">
-                                    <div class="spinner-layer pl-red">
-                                        <div class="circle-clipper left">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="circle-clipper right">
-                                            <div class="circle"></div>
-                                        </div>
-                                    </div>
-                            </div> 
-                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-        <!-- SmartSwitch -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSwitchModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">อุปกรณ์ให้แสงสว่างภายในอาคาร 78</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                        <div class="row clearfix">
-                                
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                    
-
-                                        <table id="table_SmartSwitch" class="table table-striped table-bordered table-hover">
-                                              <thead>
-                                                <tr>
-                                                   
-                                                    <th>อาคาร</th>
-                                                    <th>สถานะ</th>
-                                                
-                                                </tr>
-
-                                              </thead>
-
-                                              <tbody id="table_SmartSwitch_detail" class="scrollit">   
-                                                    
-                            
-                                                    
-                                                    
-
-
-                                              </tbody>
-                                            </table> 
-
-
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                           
-                                       <font color="red"><label id="midModalLabel">ตัวอย่างการให้บริการระบบ SmartSwitch ภายในตึกพักอาศัยของท่าน</label></font> 
- 
-                                    </div>
-                                </div>
-                        </div> 
-
- 
-                        </div>
-                        <div class="modal-footer">
-                             
-                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-    <!-- SmartSecurity -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="SmartSecurityModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">แจ้งเหตุ เจ้าหน้าที่รักษาความปลอดภัย</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                        <div class="row clearfix">
-                                
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                          
-                                        <label>กรุณาระบุเบอร์โทรศัพท์</label>
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    
-                                    <div class="form-group form-float">
-                                    <div class="form-line">
-                <input type="text" value="" class="form-control" id="SecurityComment" name="SecurityComment" required >
-                                        <label class="form-label">กรุณาระบุเบอร์โทรศัพท์</label>
-                                    </div>
-                                    </div>
-
-
-                                </div>
-                        </div> 
-
-
-
-
-
-
-                        </div>
-                        <div class="modal-footer">
-                            
-                            <button type="button" id="SendData" class="btn btn-lg btn-success waves-effect">ส่งข้อมูล</button>
-                            <div class="preloader" id="PreloadSendData">
-                                    <div class="spinner-layer pl-red">
-                                        <div class="circle-clipper left">
-                                            <div class="circle"></div>
-                                        </div>
-                                        <div class="circle-clipper right">
-                                            <div class="circle"></div>
-                                        </div>
-                                    </div>
-                            </div> 
-                            <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
- 
-        <!-- CCTVModal -->
-            <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CCTVModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel">กล้องวงจรปิด</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                        <div class="row clearfix">
-                                
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                    
-                                    <div class="embed-responsive embed-responsive-16by9">
-
-                                        <div class="player" id="CCTVplayer"></div>
-
-                                    </div>
-                                        
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                           
-                                       <font color="red"><label id="midModalLabel">ทดสอบระบบ</label></font> 
- 
-                                    </div>
-                                </div>
-                        </div> 
-
- 
-                        </div>
-                        <div class="modal-footer">
-                             
-                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    
 
 
         <!-- PreviewTVModal -->
@@ -737,15 +254,7 @@
                 </div>
             </div>
 
-
-
-
-
-
  
-
-
-
         <!-- CustomerCheckBlanaceModal -->
             <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CustomerCheckBlanaceModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-lg" role="document">
@@ -798,13 +307,13 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                           
-                                        <label>ธนาคารไทยพาณิชย์ (SCB)</label> <br>
+                                        <label>- ธนาคาร -</label> <br>
                                        
 
-                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="3994048883" name="BankCode" id="BankCode">
+                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="-" name="BankCode" id="BankCode">
                                              
                                          <br>
-                                        <label>ชื่อบัญชี : นิติบุคคลอาคารชุดเคหะชุมชนและบริการชุมชนเทพารักษ์ 3/1</label>
+                                        <label>ชื่อบัญชี : - </label>
                                         <br>
                                         <button id="CopyBankCode" onclick="CopyFunction()" class="btn btn-lg btn-info waves-effect" >กดที่นี่เพื่อคัดลอกหมายเลขบัญชี</button>
                                         
@@ -831,7 +340,7 @@
                                         </div>
                                     </div>
                             </div>  -->
-                            
+
                             <button type="button" data-dismiss="modal" class="btn btn-lg btn-danger waves-effect">ปิด</button>
 
                         </div>
