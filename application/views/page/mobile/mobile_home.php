@@ -110,7 +110,7 @@
 
                 </div> 
 
-                <div id="CustomerSendSlip" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="CustomerSendSlip" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 P5">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-light-green">
                             <i class="material-icons">email</i>
@@ -122,7 +122,7 @@
 
                 </div> 
 
-                <div id="CustomerGetDataCar" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="CustomerGetDataCar" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 P5">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-orange">
                             <i class="material-icons">email</i>
@@ -134,7 +134,7 @@
 
                 </div> 
 
-                <div id="CustomerGetPolicyA" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="CustomerGetPolicyA" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 P5">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-teal">
                             <i class="material-icons">equalizer</i>
@@ -146,7 +146,7 @@
 
                 </div> 
 
-                <div id="CustomerGetPolicyB" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div id="CustomerGetPolicyB" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 P5">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-teal">
                             <i class="material-icons">equalizer</i>
@@ -163,6 +163,8 @@
 
         </div>
 
+
+        
         <div class="block-header">
                 <h2>สาครเคเบิล</h2>
             </div>
@@ -813,4 +815,13 @@ function CopyFunction() {
         }
         
 </script>
+<script type="text/javascript">
+        
+    $(function(){
 
+
+        $(".P5").hide();
+
+    });
+
+</script>

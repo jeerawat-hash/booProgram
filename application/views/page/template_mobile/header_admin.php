@@ -119,7 +119,7 @@
                 -->
                 <a href="javascript:void(0);" class="bars"></a>
                 
-                <a class="navbar-brand" href="javascript:void(0);">นิติบุคคล Pack1 สาครเคเบิล</a>
+                <a class="navbar-brand" href="javascript:void(0);">บ้านเอื้ออาทรบางบ่อ 3 สาครเคเบิล</a>
             </div>
             
             <!--
@@ -383,7 +383,7 @@
                     <li class="<?php echo $menu[0]; ?>" >
                         <a href="javascript:void(0);">
                             <i class="material-icons">home</i>
-                            <span>จัดการบริการนิติบุคคลpack1</span>
+                            <span>บ้านเอื้ออาทรบางบ่อ 3 สาครเคเบิล</span>
                         </a>
                     </li>
 
