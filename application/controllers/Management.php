@@ -193,6 +193,7 @@ class Management extends CI_Controller
 
 			$result = $this->Mobile_model->createDataFromXlsx($_FILES["CustomerName"]["name"]);
 
+			$this->Mobile_model->ClearDataCustomerName();
 			foreach ($result as $Value) {
 
 				//print_r($Value);
