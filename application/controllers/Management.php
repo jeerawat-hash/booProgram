@@ -86,7 +86,7 @@ class Management extends CI_Controller
 
 			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,3)." บาท\n"."รายละเอียด";
 
-			notify($message1,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
+			//notify($message1,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
 
 			$message2 = "\nรายละเอียดคงค้างในระบบ";
 
@@ -96,7 +96,7 @@ class Management extends CI_Controller
 
 			}
 
-			notify($message2,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
+			//notify($message2,"BTicIrWmZYHGXeLVDSVg27NuC1Xv4Q4l2TlBcRzG4vI");
 
 
 			echo "1";
@@ -149,7 +149,7 @@ class Management extends CI_Controller
 				$message1 .= "\n".$Detail->Description." ".$Detail->Receipt." ใบเสร็จ ".$Detail->List." รายการ ".number_format($Detail->Amount,3)." บาท";
 
 			}
-			notify($message1,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
+			//notify($message1,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
 
 			$message2 = "\nรายละเอียดยอดรับเข้าระบบ";
 
@@ -158,7 +158,7 @@ class Management extends CI_Controller
 				$message2 .= "\n".$DetailALL->Description." ".number_format($DetailALL->List,3)." บาท";
 				
 			}
-			notify($message2,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
+			//notify($message2,"vSDecnkXPqwRMSeLPVhHBxSTYkc36SyYwZBwMzgpeKv");
 
 
 
