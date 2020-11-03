@@ -76,7 +76,7 @@ class Management extends CI_Controller
 				//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 	 
-				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
+				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],$Value["DETAIL"]);
 	 
 
 			}
@@ -130,7 +130,7 @@ class Management extends CI_Controller
 
 				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
 
-				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
+				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$Value["DESCRIPT"]);
 
 				//print_r($Value);
 
