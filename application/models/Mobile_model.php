@@ -1,67 +1,71 @@
 <?php 
 
 class Mobile_model extends CI_Model
-{	
+{ 
 
 
-  public function getDataCustomerByCar($CarCode,$ProjectCode)
+  public function getDataCustomerByCar($CarCode)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
       return $this->mssql->query("SELECT b.CustomerName,'ตึก '+SUBSTRING(b.Room,2,2) + ' ' +'ห้อง '+SUBSTRING(b.Room,5,2) as AddressLocal,a.CARCODE,a.CARBRAND,a.CARCOLOR,a.CARTYPE,a.COUNTRY,a.CONTACT 
-  FROM [Sakorn_Theparak3].[dbo].[CustomerCarInfo] a 
-  join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID 
-  where a.CARCODE like '".$CarCode."%' and b.ProjectCode = '".$ProjectCode."' ")->result();
+  FROM [Sakorn_Bangboo].[dbo].[CustomerCarInfo] a 
+  join Sakorn_Bangboo.dbo.Customer b on a.CUST = b.CustomerID 
+  where a.CARCODE like '".$CarCode."%'  ")->result();
 
 
   }
 
-  public function CustomerAuth($CustomerID,$ProjectCode)
+  public function CustomerAuth($CustomerID)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
 
-     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO from Sakorn_Theparak3.dbo.Customer where CustomerID = '".$CustomerID."'  ")->result();
+     return $this->mssql->query(" select CustomerID,TitleName+' '+CustomerName+' '+NoHome as CustomerINFO,ProjectCode from Sakorn_Bangboo.dbo.Customer where CustomerID = '".$CustomerID."'  ")->result();
 
 
   }
-  public function getDataBlanace($CUST,$ProjectCode)
+  public function getDataBlanace($CUST)
   {
 
         $this->mssql = $this->load->database("mssql",true);
 /*
         return $this->mssql->query(" 
- select CustomerID,CustomerName,ISNULL( convert(varchar(20) ,sum(a.AMOUNT)) ,'0') as AmountTotal from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] a
- right outer join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID
+ select CustomerID,CustomerName,ISNULL( convert(varchar(20) ,sum(a.AMOUNT)) ,'0') as AmountTotal from [Sakorn_Bangboo].[dbo].[CustomerAmount_LOG] a
+ right outer join Sakorn_Bangboo.dbo.Customer b on a.CUST = b.CustomerID
    where b.CustomerID = '".$CUST."'  and a.ProjectCode = '".$ProjectCode."'
    group by CustomerID,CustomerName ")->result();
 */
-         return $this->mssql->query(" select CustomerID,CustomerName,(select ISNULL( convert(varchar(20) ,sum(AMOUNT)) ,'0') as AmountTotal from Sakorn_Theparak3.dbo.Customer a
-   join Sakorn_Theparak3.dbo.CustomerAmount_LOG b on a.CustomerID = b.CUST
-    where a.CustomerID = '".$CUST."' and b.ProjectCode = '".$ProjectCode."'  ) as AmountTotal 
-  from Sakorn_Theparak3.dbo.Customer a  where a.CustomerID = '".$CUST."'  ")->result();
+         return $this->mssql->query(" select CustomerID,CustomerName,(select ISNULL( convert(varchar(20) ,sum(AMOUNT)) ,'0') as AmountTotal from Sakorn_Bangboo.dbo.Customer a
+   join Sakorn_Bangboo.dbo.CustomerAmount_LOG b on a.CustomerID = b.CUST
+    where a.CustomerID = '".$CUST."'   ) as AmountTotal 
+  from Sakorn_Bangboo.dbo.Customer a  where a.CustomerID = '".$CUST."'  ")->result();
 
 
   }
 
-  public function getDataBlanaceDetail($CUST,$ProjectCode)
+  public function getDataBlanaceDetail($CUST)
   {
 
         $this->mssql = $this->load->database("mssql",true);
-
-        return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] a
- right outer join Sakorn_Theparak3.dbo.Customer b on a.CUST = b.CustomerID  
- join [Sakorn_Theparak3].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
+        /*
+        return $this->mssql->query("select CustomerID,CustomerName,a.AMOUNT as AmountTotal,c.Description,a.DATE from [Sakorn_Bangboo].[dbo].[CustomerAmount_LOG] a
+ right outer join Sakorn_Bangboo.dbo.Customer b on a.CUST = b.CustomerID  
+ join [Sakorn_Bangboo].[dbo].[CustomerAmount_CodeType] c on a.CODE = c.CODE
  where b.CustomerID = '".$CUST."' and a.ProjectCode = '".$ProjectCode."' order by DATE asc ")->result();
+  */
+    return $this->mssql->query("  select CustomerID,CustomerName,a.AMOUNT as AmountTotal, a.infocode as Description,a.DATE from [Sakorn_Bangboo].[dbo].[CustomerAmount_LOG] a
+ right outer join Sakorn_Bangboo.dbo.Customer b on a.CUST = b.CustomerID   
+ where b.CustomerID = '".$CUST."'  order by DATE asc  ")->result();
 
 
   }
 
  
 
-  public function Authentication($Secrect)
+  public function AuthenticationBAK($Secrect)
   {
      $this->mssql = $this->load->database("mssql",true);
      
@@ -79,41 +83,52 @@ class Mobile_model extends CI_Model
 
 
   }
+ 
+  public function ClearDataCustomerName()
+  {
 
+     $this->mssql = $this->load->database("mssql",true);
+      $checkCustomer = $this->mssql->query(" delete from [Sakorn_Bangboo].[dbo].[Customer]  ");
+
+
+  }
   public function SyncDataCustomerName($CUST,$TitleName,$CustomerName)
   {
 
      $this->mssql = $this->load->database("mssql",true);
+ 
+      $this->mssql->query(" 
 
-     $checkCustomer = $this->mssql->query(" SELECT CustomerID,TitleName,CustomerName FROM [Sakorn_Theparak3].[dbo].[Customer] where CustomerID = '".$CUST."'  ")->num_rows();
-
-     if ($checkCustomer != 0) {
-       
-
-        $this->mssql->query(" update [Sakorn_Theparak3].[dbo].[Customer] set TitleName = '".$TitleName."',CustomerName = '".$CustomerName."' where CustomerID = '".$CUST."'  ");
-
-
-     }
-
-
+          INSERT INTO [Sakorn_Bangboo].[dbo].[Customer]
+           ([CustomerID]
+           ,[TitleName]
+           ,[CustomerName]
+           ,[NoHome]
+           ,[Room])
+     VALUES
+           ('".$CUST."'
+           ,'".$TitleName."'
+           ,'".$CustomerName."'
+           ,'".$CUST."'
+           ,'".$CUST."') "); 
+ 
 
   }
 
 
-  public function insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT,$ProjectCode)
+  public function insertDataCarInfo($CUST,$CARCODE,$COUNTRY,$CARTYPE,$CARBRAND,$CARCOLOR,$CONTACT)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" INSERT INTO [Sakorn_Theparak3].[dbo].[CustomerCarInfo]
+     $this->mssql->query(" INSERT INTO [Sakorn_Bangboo].[dbo].[CustomerCarInfo]
            ([CUST]
            ,[CARCODE]
            ,[COUNTRY]
            ,[CARTYPE]
            ,[CARBRAND]
            ,[CARCOLOR]
-           ,[CONTACT]
-           ,[ProjectCode])
+           ,[CONTACT])
      VALUES
            ('".$CUST."'
            ,'".$CARCODE."'
@@ -121,65 +136,64 @@ class Mobile_model extends CI_Model
            ,'".$CARTYPE."'
            ,'".$CARBRAND."'
            ,'".$CARCOLOR."'
-           ,'".$CONTACT."'
-           ,'".$ProjectCode."') ");
+           ,'".$CONTACT."') ");
 
 
   }
 
-  public function clearDataCarInfo($ProjectCode)
+  public function clearDataCarInfo()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[CustomerCarInfo] where  ProjectCode = '".$ProjectCode."' ");
+     $this->mssql->query(" delete from [Sakorn_Bangboo].[dbo].[CustomerCarInfo]  ");
  
   }
 
  
-  public function insertDataServicesCost($CUST,$DATE,$CODE,$AMOUNT,$ProjectCode)
+  public function insertDataServicesCost($CUST,$DATE,$CODE,$AMOUNT,$DETAIL)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query("INSERT INTO [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG]
+     $this->mssql->query("INSERT INTO [Sakorn_Bangboo].[dbo].[CustomerAmount_LOG]
            ([CUST]
            ,[DATE]
            ,[CODE]
            ,[AMOUNT]
-           ,[ProjectCode])
+           ,[InfoCode])
      VALUES
            ('".$CUST."'
            ,'".$DATE."'
            ,'".$CODE."'
            ,'".$AMOUNT."'
-           ,'".$ProjectCode."') ");
+           ,'".$DETAIL."') ");
 
 
   }
 
-  public function clearDataServicesCost($ProjectCode)
+  public function clearDataServicesCost()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[CustomerAmount_LOG] where  ProjectCode = '".$ProjectCode."' ");
+     $this->mssql->query(" delete from [Sakorn_Bangboo].[dbo].[CustomerAmount_LOG]  ");
  
   }
 
-    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT,$ProjectCode)
+    public function insertDataReceiveCost($CUST,$RECEIPT,$CODE,$AMOUNT,$DETAIL)
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" INSERT INTO [Sakorn_Theparak3].[dbo].[CustomerPay_LOG]
+     $this->mssql->query(" INSERT INTO [Sakorn_Bangboo].[dbo].[CustomerPay_LOG]
            ([CUST]
            ,[RECEIPT]
            ,[PAYTYPE_ID]
            ,[DATE]
            ,[CODE]
            ,[AMOUNT]
-           ,[ProjectCode])
+           ,[InfoCode])
      VALUES
            ('".$CUST."'
            ,'".$RECEIPT."'
@@ -187,58 +201,61 @@ class Mobile_model extends CI_Model
            ,'".date("Y-m-d")."'
            ,'".$CODE."'
            ,'".$AMOUNT."'
-           ,'".$ProjectCode."') ");
+           ,'".$DETAIL."') ");
 
 
   }
 
-  public function clearDataReceiveCost($ProjectCode)
+  public function clearDataReceiveCost()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     $this->mssql->query(" delete from [Sakorn_Theparak3].[dbo].[CustomerPay_LOG] where  ProjectCode = '".$ProjectCode."' ");
+     $this->mssql->query(" delete from [Sakorn_Bangboo].[dbo].[CustomerPay_LOG]  ");
  
   }
 
-  public function ReportCustomerTotal($ProjectCode)
+  public function ReportCustomerTotal()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select sum(list) as AMOUNT from (
-    select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a
-    right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE  where a.ProjectCode = '".$ProjectCode."'  group by b.Description
-    )a ")->result();
+     return $this->mssql->query("  select sum(list) as AMOUNT from (
+ select isnull(sum(a.AMOUNT),0) as List,a.InfoCode as Description from Sakorn_Bangboo.dbo.CustomerAmount_LOG a 
+ group by a.Code,a.InfoCode  
+  )a  ")->result();
  
   }
-  public function ReportCustomerTotalDetail($ProjectCode)
+  public function ReportCustomerTotalDetail()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerAmount_LOG a
-right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = '".$ProjectCode."' group by b.Description ")->result();
+     return $this->mssql->query(" 
+  select isnull(sum(a.AMOUNT),0) as List,a.InfoCode as Description from Sakorn_Bangboo.dbo.CustomerAmount_LOG a 
+ group by a.Code,a.InfoCode order by List Desc")->result();
  
   }
-  public function ReportCustomerReceive($ProjectCode)
+  public function ReportCustomerReceive()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
-     return $this->mssql->query(" select isnull(sum(a.AMOUNT),0) as List,b.Description from Sakorn_Theparak3.dbo.CustomerPay_LOG a
-right outer join Sakorn_Theparak3.dbo.CustomerAmount_CodeType b on a.CODE = b.CODE where a.ProjectCode = '".$ProjectCode."' group by b.Description ")->result();
+     return $this->mssql->query(" 
+ select isnull(sum(a.AMOUNT),0) as List,(case when a.InfoCode = '' then 'อื่นๆ' else a.InfoCode end) as  Description 
+ from Sakorn_Bangboo.dbo.CustomerPay_LOG a 
+  group by a.Code,a.InfoCode  ")->result();
  
   }
 
-  public function ReportCustomerReceiveDetail($ProjectCode)
+  public function ReportCustomerReceiveDetail()
   {
 
      $this->mssql = $this->load->database("mssql",true);
 
      return $this->mssql->query("  select Description,Count(RECEIPT) as Receipt,Sum(RECEIPTList) as List,sum(Amount) as Amount from (
- select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Theparak3.dbo.CustomerPay_LOG a 
- join Sakorn_Theparak3.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID where a.ProjectCode = '".$ProjectCode."' group by RECEIPT,b.Description
+ select RECEIPT,b.Description,count(RECEIPT) as RECEIPTList,sum(a.Amount) as Amount from Sakorn_Bangboo.dbo.CustomerPay_LOG a 
+ join Sakorn_Bangboo.dbo.CustomerPay_Type b on a.PAYTYPE_ID = b.ID  group by RECEIPT,b.Description
  )a group by Description ")->result();
  
   }

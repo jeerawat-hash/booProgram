@@ -52,7 +52,7 @@ class Management extends CI_Controller
 
 			//print_r($result);
 
-			$this->Mobile_model->clearDataServicesCost("P5");
+			$this->Mobile_model->clearDataServicesCost();
 
 
 			$ROOM = ""; 
@@ -76,13 +76,13 @@ class Management extends CI_Controller
 				//echo $ROOM."|".$CUST."|".$HOMENO."|".$NAME."|".$BILLNO."|".$Value["DATE"]."|".$Value["CODE"]."|".$Value["DETAIL"]."|".$Value["AMOUNT"]."<br>";
 
 	 
-				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"],"P5");
+				$this->Mobile_model->insertDataServicesCost($CUST,$Value["DATE"],$Value["CODE"],$Value["AMOUNT"]);
 	 
 
 			}
 
-			$ReportTotal = $this->Mobile_model->ReportCustomerTotal("P5");
-			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail("P5");
+			$ReportTotal = $this->Mobile_model->ReportCustomerTotal();
+			$ReportTotalDetail = $this->Mobile_model->ReportCustomerTotalDetail();
 
 			$message1 = "\nสรุปยอดคงค้างในระบบ\n".number_format($ReportTotal[0]->AMOUNT,3)." บาท\n"."รายละเอียด";
 
@@ -124,13 +124,13 @@ class Management extends CI_Controller
 
  			$result = $this->Mobile_model->createDataFromXlsx($_FILES["ReceiveCost"]["name"]);
 
-			$this->Mobile_model->clearDataReceiveCost("P5");
+			$this->Mobile_model->clearDataReceiveCost();
 
 			foreach ($result as $Value) {
 
 				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
 
-				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],"P5");
+				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"]);
 
 				//print_r($Value);
 
@@ -139,8 +139,8 @@ class Management extends CI_Controller
 			echo "1";
 
 
-			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive("P5");
-			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail("P5");
+			$ReportReceiveTotal = $this->Mobile_model->ReportCustomerReceive();
+			$ReportReceiveTotalDetail = $this->Mobile_model->ReportCustomerReceiveDetail();
 
 			$message1 = "\nสรุปยอดรับเข้าระบบ";
 
@@ -234,7 +234,7 @@ class Management extends CI_Controller
 			$result = $this->Mobile_model->createDataFromXlsx($_FILES["CarInfofile"]["name"]);
 
 
-			$this->Mobile_model->clearDataCarInfo("P5");
+			$this->Mobile_model->clearDataCarInfo();
 
 
 			foreach ($result as $Value) {
@@ -244,7 +244,7 @@ class Management extends CI_Controller
 				$CA_CUST = str_replace("/","-", $Value["CA_CUST"] );
 				$CA_CODE = str_replace("/","-", $Value["CA_CODE"] );
 
-				$this->Mobile_model->insertDataCarInfo($CA_CUST,$CA_CODE,$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"],"P5");
+				$this->Mobile_model->insertDataCarInfo($CA_CUST,$CA_CODE,$Value["CA_COUNTRY"],$Value["CA_TYPE"],$Value["CA_BRAND"],$Value["CA_COLOR"],$Value["CA_REMARK"]);
 
 
 			}
