@@ -65,7 +65,7 @@ class Mobile_model extends CI_Model
 
  
 
-  public function AuthenticationBAK($Secrect)
+  public function Authentication($Secrect)
   {
      $this->mssql = $this->load->database("mssql",true);
      
