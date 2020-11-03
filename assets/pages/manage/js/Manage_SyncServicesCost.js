@@ -41,7 +41,7 @@ $(function(){
                 success: function(data){
 
                     console.log(data);
-                /*
+                
                     if (data == 1) {
 
                     alert("บันทึกข้อมูลสำเร็จ....");
@@ -59,7 +59,7 @@ $(function(){
                         $("#DataSyncServicesCostModal").find("#PreloadSendData").hide();
 
                     } 
-                    */
+                    
                       
                 },
                 error : function(){
