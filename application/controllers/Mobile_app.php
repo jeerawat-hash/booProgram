@@ -233,7 +233,7 @@ class Mobile_app extends CI_Controller
  		
  		$line_api = 'https://notify-api.line.me/api/notify';
  		//$access_token = 'เปลี่ยนด้วย';
-    	$access_token = 'ezT0XgGQsCtERqfTc8gCfCc9P37RDYs5L8vRnHb8kG0';//eWEGn8hijvdIqDQCdBRUffGcMUQ3UIp7yuyQjde1g3f  JOID9jUQBwuPZ17kE9BXLbnBnlsw73WKvtL16gLp8HS
+    	$access_token = 'kBvMKfPGoL6NhAbknMyfcukN1l6snFaWOt1ZDfVahJ3';//eWEGn8hijvdIqDQCdBRUffGcMUQ3UIp7yuyQjde1g3f  JOID9jUQBwuPZ17kE9BXLbnBnlsw73WKvtL16gLp8HS
 
 	    $image_thumbnail_url = $image_url;  // max size 240x240px JPEG
 	    $image_fullsize_url = $image_url; //max size 1024x1024px JPEG
