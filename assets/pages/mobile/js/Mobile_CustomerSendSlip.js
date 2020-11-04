@@ -79,8 +79,9 @@ $(function(){
         		console.log(data);
 
         		if (data == "1") {
-        			alert("ส่งใบเสร็จเข้าสู่ระบบสำเร็จ เจ้าหน้าที่นิติบุคคลจะดำเนินการยิงรับชำระในช่วงเวลา 09:00-16:00น.");
-					$("#CustomerSendSlipModal").modal("hide");
+        			//alert("ส่งใบเสร็จเข้าสู่ระบบสำเร็จ เจ้าหน้าที่นิติบุคคลจะดำเนินการยิงรับชำระในช่วงเวลา 09:00-16:00น.");
+					swal("Success","สำเร็จ", "success");
+                    $("#CustomerSendSlipModal").modal("hide");
 
         		}else{
 
