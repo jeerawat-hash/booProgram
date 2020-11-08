@@ -130,7 +130,24 @@ class Management extends CI_Controller
 
 				$Customer = str_replace("/","-", $Value["CUSTOMER"] );
 
-				$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$Value["DESCRIPT"]);
+
+
+				if ( trim( $Value["PAY"] ) == "เงินสด" ) {
+					
+
+					$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$Value["DESCRIPT"],"1");
+
+
+				}else
+				if ( trim( $Value["PAY"] ) == "โอน" ) {
+					
+
+					$this->Mobile_model->insertDataReceiveCost($Customer,$Value["RECEIPT"],$Value["CODE"],$Value["AMOUNT"],$Value["DESCRIPT"],"2");
+
+
+
+				}
+
 
 				//print_r($Value);
 
