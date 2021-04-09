@@ -241,7 +241,7 @@
                             <i class="material-icons">devices</i>
                         </div>
                         <div class="content">
-                            <div class="text">กล้องบริเวณถนน 2</div>
+                            <div class="text">กล้องบริเวณถนน 3</div>
                         </div>
                     </div>
 
