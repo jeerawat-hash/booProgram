@@ -869,7 +869,8 @@ function CopyFunction() {
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
-  alert("คัดลอกหมายเลขบัญชีสำเร็จ....");
+  //alert("คัดลอกหมายเลขบัญชีสำเร็จ....");
+  swal("สำเร็จ!", "คัดลอกหมายเลขบัญชีสำเร็จ!", "success");
 }
 
 
