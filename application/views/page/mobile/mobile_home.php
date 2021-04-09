@@ -161,7 +161,7 @@
 
  
 
-        </div>
+            </div>
 
 
 
@@ -190,7 +190,69 @@
         </div>
 
 
-  
+
+
+        <div class="block-header">
+                <h2>กล้องวงจรปิด</h2>
+            </div>
+
+            <div class="row clearfix">
+              <!-- Menu -->    
+ 
+                <div id="CCTV1" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องบริเวณทางเข้า</div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div id="CCTV2" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องบริเวณถนน 1</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="CCTV3" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องบริเวณถนน 2</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="CCTV4" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">devices</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">กล้องบริเวณถนน 2</div>
+                        </div>
+                    </div>
+
+                </div>
+
+ 
+
+            </div>
+
+
+        
 
 
  

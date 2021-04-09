@@ -11,14 +11,14 @@ $(function(){
         $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
-        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งหน้าอาคาร45");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดบริเวณทางเข้าโครงการ");
         $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
 
 
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjEtLm0zdTg='),
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvQ0NUVi9iYW5nYm9vL2NjdHYyOC0ubTN1OA=='),
         preload: "none",
         width: '50%',
         height: '50%',
@@ -35,13 +35,13 @@ $(function(){
         $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
-        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งทางเข้าบริเวณอาคาร37");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องบริเวณถนน 1");
         $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
 
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjItLm0zdTg='),
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvQ0NUVi9iYW5nYm9vL2NjdHYzMC0ubTN1OA=='),
         preload: "none",
         width: '50%',
         height: '50%',
@@ -58,13 +58,13 @@ $(function(){
         $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
-        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร38");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องบริเวณถนน 2");
         $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
 
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjMtLm0zdTg='),
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvQ0NUVi9iYW5nYm9vL2NjdHYzMi0ubTN1OA=='),
         preload: "none",
         width: '50%',
         height: '50%',
@@ -81,13 +81,13 @@ $(function(){
         $("#CCTVplayer").html("");
 
         $("#CCTVModal").modal("show");
-        $("#CCTVModal").find("#largeModalLabel").text("กล้องวงจรปิดตำแหน่งอาคาร39");
+        $("#CCTVModal").find("#largeModalLabel").text("กล้องบริเวณถนน 3");
         $("#CCTVModal").find("#midModalLabel").text("แตะสองครั้งที่วีดีโอเพื่อเปิดเต็มจอ");
 
         ////////////
      
     var player = new Clappr.Player({
-        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2hscy9jY3R2MjQtLm0zdTg='),
+        source: atob('aHR0cHM6Ly9hcHAuc2Frb3JuY2FibGUuY29tL2xpdmUvQ0NUVi9iYW5nYm9vL2NjdHYzNC0ubTN1OA=='),
         preload: "none",
         width: '50%',
         height: '50%',
