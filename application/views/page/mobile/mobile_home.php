@@ -270,7 +270,49 @@
 
 
 
-    
+    <!-- CCTVModal -->
+    <div class="modal fade" data-backdrop="static" data-keyboard="false" id="CCTVModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">กล้องวงจรปิด</h4>
+                        </div>
+                        <div class="modal-body">
+
+
+                        <div class="row clearfix">
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    
+                                    <div class="embed-responsive embed-responsive-16by9">
+
+                                        <div class="player" id="CCTVplayer"></div>
+
+                                    </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                           
+                                       <font color="red"><label id="midModalLabel">ทดสอบระบบ</label></font> 
+ 
+                                    </div>
+                                </div>
+                        </div> 
+
+ 
+                        </div>
+                        <div class="modal-footer">
+                             
+                            <button type="button"  data-dismiss="modal" class="btn btn-lg btn-danger waves-effect cctv-close">ปิด</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         <!-- PreviewTVModal -->
