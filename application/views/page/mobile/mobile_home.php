@@ -822,8 +822,8 @@
 
                             <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" value="" class="form-control" id="CustomerID" name="CustomerID" required>
-                                        <label class="form-label">บ้านเลขที่ 000-00 </label>
+                                        <input type="text" value="" autocomplete="off" class="form-control" id="CustomerID" name="CustomerID" required>
+                                        <label class="form-label">บ้านเลขที่ 000-00</label>
                                     </div>
                             </div>
  
