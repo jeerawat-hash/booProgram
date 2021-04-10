@@ -97,6 +97,7 @@ $(function(){
 
 					$("#table_info_blanace_detail").html(html);
 					
+					$("#InfoBalanceModal").modal("show");
 
 				}else{
 
@@ -114,7 +115,7 @@ $(function(){
 		});
 
 
-		$("#InfoBalanceModal").modal("show");
+		
 
 
 
