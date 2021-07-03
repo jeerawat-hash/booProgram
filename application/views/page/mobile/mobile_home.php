@@ -413,13 +413,13 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                           
-                                        <label>ธนาคารธนชาต</label> <br>
+                                        <label>ธนาคาร ทีทีบี เบสิก</label> <br>
                                        
 
-                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="6866089515" name="BankCode" id="BankCode">
+                                <label><font color="red">เลขที่ </font>: </label><input type="text" readonly style="border: none;" value="1892394105" name="BankCode" id="BankCode">
                                              
                                          <br>
-                                        <label>ชื่อบัญชี : นิติบุคคลอาคารชุด บ้านเอื้ออาทรบางบ่อ 3 </label>
+                                        <label>ชื่อบัญชี : นิติบุคคลอาคารชุดบ้านเอื้ออาทรบางบ่อ3 </label>
                                         <br>
                                         <button id="CopyBankCode" onclick="CopyFunction()" class="btn btn-lg btn-info waves-effect" >กดที่นี่เพื่อคัดลอกหมายเลขบัญชี</button>
                                         
